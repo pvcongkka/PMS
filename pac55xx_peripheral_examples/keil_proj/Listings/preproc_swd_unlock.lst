@@ -1,0 +1,138 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         #line   1                "C:\\Users\\smagee\\source\\git
+\\pac55xx\\pac55xx_example_code.top\\pac55xx_example_code.git\\pac55xx_example_
+code\\pac55xx_peripheral_examples\\src\\code_protect\\swd_unlock.S"
+    1 00000000         
+    2 00000000         
+    3 00000000         
+    4 00000000         
+    5 00000000         
+    6 00000000         
+    7 00000000         
+    8 00000000         
+    9 00000000         
+   10 00000000         
+   11 00000000         
+   12 00000000         
+   13 00000000         
+   14 00000000         
+   15 00000000         
+   16 00000000         
+   17 00000000         
+   18 00000000         
+   19 00000000         
+   20 00000000         
+   21 00000000         
+   22 00000000         
+   23 00000000         
+   24 00000000         
+   25 00000000         
+   26 00000000         
+   27 00000000         
+   28 00000000         
+   29 00000000         
+   30 00000000         
+   31 00000000         
+   32 00000000         
+   33 00000000         
+   34 00000000         #line   64               "C:\\Users\\smagee\\source\\git
+\\pac55xx\\pac55xx_example_code.top\\pac55xx_example_code.git\\pac55xx_example_
+code\\pac55xx_peripheral_examples\\src\\code_protect\\swd_unlock.S"
+   64 00000000         
+   65 00000000         
+   66 00000000         
+   67 00000000         
+   68 00000000         
+   69 00000000         
+   70 00000000         
+   71 00000000         
+   72 00000000         
+   73 00000000         
+   74 00000000         
+   75 00000000         
+   76 00000000         
+   77 00000000         
+   78 00000000         
+   79 00000000         
+   80 00000000         
+   81 00000000         
+   82 00000000         
+   83 00000000         
+
+
+
+ARM Macro Assembler    Page 2 
+
+
+   84 00000000         
+   85 00000000         
+   86 00000000         
+   87 00000000         
+   88 00000000                 PRESERVE8
+   89 00000000                 THUMB
+   90 00000000                 AREA             |.data|, CODE, READWRITE
+   91 00000000                 EXPORT           write_swdunlock_key_ramfunc_asm
+   92 00000000                 ALIGN            2
+   93 00000000         
+   94 00000000         write_swdunlock_key_ramfunc_asm
+   95 00000000         
+   96 00000000         
+   97 00000000 0400            lsls             r0,r0,#16
+   98 00000002 4408            add              r0,r0,r1
+   99 00000004         
+  100 00000004         
+  101 00000004 4901            ldr              r1, =0x400D0010
+  102 00000006         
+  103 00000006 6008            str              r0,[r1]
+  104 00000008         
+  105 00000008         
+  106 00000008 2000            movs             r0,#0
+  107 0000000A         
+  108 0000000A         
+  109 0000000A 4770            bx               lr
+  110 0000000C         
+  111 0000000C                 END
+              400D0010 
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp.sp --apcs=
+interwork --depend=.\objects\preproc_swd_unlock.d -o.\objects\preproc_swd_unloc
+k.o -I.\RTE\_project -IC:\Users\Selex-PC\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.
+0\CMSIS\Core\Include -IC:\Users\Selex-PC\AppData\Local\Arm\Packs\Active-Semi\PA
+C55XX\1.1.0\Device\Include --predefine="__EVAL SETA 1" --predefine="__MICROLIB 
+SETA 1" --predefine="__UVISION_VERSION SETA 531" --predefine="_RTE_ SETA 1" --p
+redefine="_RTE_ SETA 1" --list=.\listings\preproc_swd_unlock.lst preproc_swd_un
+lock.S
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+.data 00000000
+
+Symbol: .data
+   Definitions
+      At line 90 in file C:\\Users\\smagee\\source\\git\\pac55xx\\pac55xx_examp
+le_code.top\\pac55xx_example_code.git\\pac55xx_example_code\\pac55xx_peripheral
+_examples\\src\\code_protect\\swd_unlock.S
+   Uses
+      None
+Comment: .data unused
+write_swdunlock_key_ramfunc_asm 00000000
+
+Symbol: write_swdunlock_key_ramfunc_asm
+   Definitions
+      At line 94 in file C:\\Users\\smagee\\source\\git\\pac55xx\\pac55xx_examp
+le_code.top\\pac55xx_example_code.git\\pac55xx_example_code\\pac55xx_peripheral
+_examples\\src\\code_protect\\swd_unlock.S
+   Uses
+      At line 91 in file C:\\Users\\smagee\\source\\git\\pac55xx\\pac55xx_examp
+le_code.top\\pac55xx_example_code.git\\pac55xx_example_code\\pac55xx_peripheral
+_examples\\src\\code_protect\\swd_unlock.S
+Comment: write_swdunlock_key_ramfunc_asm used once
+2 symbols
+339 symbols in table
